@@ -381,10 +381,6 @@ class NotificationService(val context: Context) {
             PRIORITY_HIGH -> {
                 val channel = NotificationChannel(channelId, context.getString(R.string.common_priority_high_name), NotificationManager.IMPORTANCE_HIGH)
                 channel.enableVibration(true)
-                channel.vibrationPattern = longArrayOf(
-                    pause, 100, pause, 100, pause, 100,
-                    pause, 2000
-                )
                 channel
             }
             PRIORITY_MAX -> {
@@ -392,14 +388,6 @@ class NotificationService(val context: Context) {
                 channel.enableLights(true)
                 channel.enableVibration(true)
                 channel.setBypassDnd(true)
-                channel.vibrationPattern = longArrayOf(
-                    pause, 100, pause, 100, pause, 100,
-                    pause, 2000,
-                    pause, 100, pause, 100, pause, 100,
-                    pause, 2000,
-                    pause, 100, pause, 100, pause, 100,
-                    pause, 2000
-                )
                 channel
             }
             else -> NotificationChannel(channelId, context.getString(R.string.common_priority_default_name), NotificationManager.IMPORTANCE_DEFAULT)
