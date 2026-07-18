@@ -1,3 +1,5 @@
+***THE ONLY CHANGE I MADE FROM ORIGINAL REPO IS TO REMOVE NOTIFICATION VIBRATION PATTERNS THAT INCLUDES ORIGINAL DEVELOPER.***
+
 # ntfy Android App
 This is the Android app for [ntfy](https://github.com/binwiederhier/ntfy) ([ntfy.sh](https://ntfy.sh)). You can find the app in [F-Droid](https://f-droid.org/packages/io.heckel.ntfy/) or the [Play Store](https://play.google.com/store/apps/details?id=io.heckel.ntfy), 
 or as .apk files on the [GitHub releases page](https://github.com/binwiederhier/ntfy-android/releases).
